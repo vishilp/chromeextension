@@ -1,0 +1,6 @@
+What I want it to do:
+move randomly
+drag and drop it somewhere
+have cool animations like falling, or maybe holding onto the side of the window
+remind you to hydrate (or dies)
+integrate with google calendars (LAST)

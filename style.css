@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    border: 1px solid black;  /*make it look more friendly like happy dog*/
+}
+
+button{
+    border-radius: 5px;
+}
+
+/*#avatar{
+    position:absolute;
+    margin-top: 80vh;  /*figure out how to make this work if window is resized midway*/
+    /*margin-left: 90vw;
+    border: 1px solid black;
+    /*animation: moveLeft 2s infinite;*/
+/*}*/
+
+@keyframes moveLeft{
+    0%{left:0px}
+    100%{left:-1000px}
+}
