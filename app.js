@@ -24,11 +24,11 @@ function injectPet(pet)
 
 injectPet("cat")// works, dom apparently loaded already, so domcontentloaded event no working
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    console.log("hello")
     if (request.message== "switch")
     {
-        avatar.style.zIndex= "-1"
+        avatar.style.display= "none"
     }
 })
 
 //remove on fullscreen
+//make sure when image is off, u cant drag it 
