@@ -21,18 +21,14 @@ function injectPet(pet)
     document.body.appendChild(avatar)
 }
 
-document.addEventListener("DOMContentLoaded", ()=> {
-    //injectPet("cat")
-    console.log("Injector- JS jas been injected to: " + site )
-    
-    chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-        if (request.message== "switch")
-        {
-            alert("works")
-            avatar.style.zIndex= "0"
-        }
-    })
+
+injectPet("cat")// works, dom apparently loaded already, so domcontentloaded event no working
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    console.log("hello")
+    if (request.message== "switch")
+    {
+        avatar.style.zIndex= "-1"
+    }
 })
-injectPet("cat") // works, dom apparently loaded already, so domcontentloaded event no working
 
 //remove on fullscreen
